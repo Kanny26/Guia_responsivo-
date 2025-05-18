@@ -2,14 +2,14 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #ecbcbc;
-    color: #55476b;
+    color: #cdbee5;
     padding: 30px;
     text-align: center;
 }
 
 header h1 {
     font-size: 32px;
-    color: #8d67a7;
+    color: #360a53;
     margin-bottom: 10px;
 }
 
@@ -24,11 +24,11 @@ header p {
 
 .card {
     display: inline-block;
-    /* vertical-align: top; */
+    vertical-align: top;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 260px;
+    width: 300px;
     margin: 10px;
     padding: 20px;
     box-sizing: border-box;
@@ -42,20 +42,20 @@ header p {
 
 .card h2 {
     font-size: 20px;
-    color: #333;
+    color: #21092b;
     margin-bottom: 10px;
 }
 
 .card p {
-    font-size: 14px;
-    color: #666;
+    font-size: 18px;
+    color: #131e2b;
     margin-bottom: 15px;
 }
 
 .card a {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #4e73df;
+    background-color: #aa72cf;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -63,13 +63,13 @@ header p {
 }
 
 .card a:hover {
-    background-color: #2e59d9;
+    background-color: #d92ed0;
 }
 
 footer {
     margin-top: 50px;
-    font-size: 13px;
-    color: #888;
+    font-size: 18px;
+    color: #10011b;
 }
 
 /* Responsividad sin grid ni flex */
