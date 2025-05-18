@@ -1,0 +1,56 @@
+body {
+font-family: sans-serif;
+background: #fafafa;
+}
+
+.galeria {
+text-align: center;
+}
+
+.tarjeta {
+display: inline-block;
+width: 100px;
+max-width: 200px;
+margin: 10px;
+padding: 10px;
+background: linear-gradient(to bottom, #f7d3e3, #fbeeea);
+border-radius: 16px; box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+text-align: center;
+border: 1px solid #e1cbd1;
+vertical-align: top;
+}
+.tarjeta h3 {
+margin: 12px 0 8px;
+color: #8c3a5c;
+font-size: 20px;
+}
+
+.tarjeta img {
+
+width: 180px;
+height: 150px; border-radius: 8px; display: block;
+margin: 0 auto; 
+}
+
+@media (min-width: 768px) {
+.tarjeta {
+    width: 200px;
+    }
+}
+/* Estilos para impresión */ 
+@media print { body {
+    background: white;
+    color: black;
+    }
+}
+.tarjeta {
+    background: none;
+    box-shadow: none;
+    border: 1px solid #000;
+}
+.tarjeta h3 {
+    color: black;
+}
+.tarjeta img {
+filter: grayscale(100%);
+}

@@ -1,0 +1,35 @@
+/* Estilos base para todos los tamaños */
+body {
+    font-size: 1rem; /* Tamaño base */
+    margin: 2rem;
+    background-color: rgb(255, 200, 200);
+}
+
+.container {
+    max-width: 60rem;
+    padding: 2rem;
+}
+
+/* Media query para pantallas menores a 48em (~768px) */
+@media (max-width: 48em) {
+    body {
+        font-size: 0.875rem; /* Reduce el tamaño de fuente */
+    }
+
+.container {
+    padding: 1rem;
+    background-color: lightblue;
+    }
+}
+
+/* Media query para pantallas menores a 30em (~480px) */
+@media (max-width: 30em) {
+    body {
+        font-size: 0.75rem; /* Aún más pequeño */
+    }
+
+.container {
+    padding: 0.5rem;
+    background-color: lightgreen;
+    }
+}

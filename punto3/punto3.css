@@ -1,0 +1,78 @@
+/* mobile first */
+
+/* Reset y fuente general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #d63384;
+    font-size: 28px;
+}
+
+header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Diseño base para móviles: apilado */
+.galeria {
+    text-align: center;
+}
+
+.pastel {
+    background-color: #ffe4ec;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 auto 20px auto;
+    width: 90%;
+    max-width: 320px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.pastel img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.pastel h2 {
+    color: #c71585;
+    font-size: 20px;
+}
+
+/* Tablet: 2 columnas usando float */
+@media (min-width: 768px) {
+.pastel {
+    float: left;
+    width: 450px;
+    margin: 10px 25px;
+    }
+}
+
+/* Desktop: 3 columnas */
+@media (min-width: 992px) {
+.pastel {
+    width: 30%;
+    margin: 10px 20px;
+    }
+}
+
+/* Ajuste del footer */
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+    color: #777;
+}

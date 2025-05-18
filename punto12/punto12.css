@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.img-responsive {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Imagen grande aromaticas (pantallas mayores a 48em) */
+.img-grande{
+    display: block;
+}
+
+/* Imagen mediana cafe (hasta 48em ~768px) */
+@media (max-width: 48em) {
+.img-grande {
+    display: none;
+}
+
+.img-mediana {
+    display: block;
+    }
+}
+
+/* Imagen pequeña pasteles (hasta 30em ~480px) */
+@media (max-width: 30em) {
+.img-mediana {
+    display: none;
+}
+
+.img-pequeña {
+    display: block;
+}
+}
+

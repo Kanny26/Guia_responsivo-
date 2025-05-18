@@ -1,0 +1,58 @@
+body {
+margin: 0; padding: 0;
+font-family: sans-serif; 
+background-color: #f4f4f4;
+}
+/* Estilos del contenedor principal */
+.contenedor {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    padding: 20px;/* Espaciado interno alrededor del contenido */
+}
+
+/* Estilos para pantallas pequeñas (< 768px) */
+.caja {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Estilos para pantallas medianas (2 768px) */
+@media (min-width: 768px) {
+    .caja {
+        float: left;
+        width: 450px;
+        margin: 10px 25px;
+        background-color: #2ecc71;  
+        font-size: 18px;
+        padding: 25px;
+    }
+}
+
+/* Estilos para pantallas grandes (≥ 992px) */
+@media (min-width: 992px) {
+    .caja {
+        width: 360px;
+        margin: 10px 20px;
+        background-color: #e67e22; /* naranja */
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+/* Estilos para pantallas extra grandes (2 1200px) */ 
+@media (min-width: 1200px) {
+    .contenedor {
+        padding: 40px;
+    }
+.caja {
+    background-color: #965966; /* morado */
+    font-size: 22px;
+    padding: 35px;
+    }
+}

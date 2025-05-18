@@ -1,0 +1,38 @@
+body {
+    margin: 0; padding: 40px;
+    font-family: Arial, sans-serif; 
+    background-color: #eef7fa;
+}
+
+.contenedor {
+    max-width: 960px;
+    margin: auto; 
+}
+h1 {
+    font-size: 36px; /* Tamaño grande por defecto*/
+    color: #009c7a;
+}
+p {
+    font-size: 20px;
+    color: #198448;
+}
+/*=== Pantallas medianas (Tablets: ≤ 768px)*/
+@media (max-width: 768px) {
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    }
+}
+/* === Pantallas pequeñas (Móviles: ≤ 480px)
+*/
+@media (max-width: 480px) {
+    h1 { 
+        font-size: 22px;
+    }
+p {
+    font-size: 16px;
+    }
+}

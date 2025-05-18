@@ -1,0 +1,72 @@
+
+body {
+    background-color: rgba(255, 197, 197, 0.985); 
+    background-image: url(bg1.png);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centre inline-blocks */
+}
+
+.cards {
+    background: radial-gradient(circle at center, rgb(64, 165, 108), rgb(149, 144, 175), rgb(255, 193, 193)); 
+    width: 300px; /* Default tamaño base */
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow:4px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 0px 15px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: top; /* Alinea las tarjetas en la parte superior */
+}
+
+.cards h3 {
+    font-size: 20px;
+    color: rgba(185, 17, 185, 0.836);
+    margin: 10px 0;
+    font-family: 'Gill Sans';
+    
+}
+
+img {
+    display: block; 
+    margin: auto; 
+    max-width: 100%; 
+    max-height: 90%; 
+    object-fit: cover; 
+    border-radius:5px;
+}
+
+/*Responsive con columnas variables --- Pantallas grandes (3 o más columnas) */ 
+@media (min-width: 1200px) {
+    .cards {
+        width: 280px;
+        height: 400px;
+    }
+}
+
+/* Pantallas medianas (2 columnas) */ 
+@media (max-width: 1199px) and (min-width: 768px) {
+    .cards {
+        width: 320px;
+        height: 420px;
+    }
+}
+
+/* Pantallas pequeñas (1 columna) */
+@media (max-width: 767px) {
+    .cards {
+        width: 90%;
+        height: auto;
+        margin: 15px auto;
+    }
+    .cards h3 {
+        font-size: 18px;
+}
+}

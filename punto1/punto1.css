@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center; height: 100vh;
+    text-align: center;
+    background-color: #3498db;
+}
+
+h1{
+    color: white;
+}
+
+/* color para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    body {
+        background-color: #5fd192;
+    }
+}
+
+/* color para pantallas pequeñas (moviles) */
+@media (max-width: 480px) {
+    body {
+        background-color: #909ae0;
+    }
+}

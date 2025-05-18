@@ -1,0 +1,82 @@
+/* Estilos base para desktop (≥ 992px) */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3e5ab;
+    color: #222;
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #4e342e;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    color: #5d4037;
+}
+
+.galeria {
+    width: 100%;
+}
+
+.pastel {
+    float: left;
+    width: 30%;
+    margin: 15px 1.66%;
+    background-color: #d7ccc8;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.pastel img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.pastel h2 {
+    color: #3e2723;
+    font-size: 22px;
+}
+
+/* Tablets (≤ 991px): 2 columnas */
+@media (max-width: 991px) {
+.pastel {
+    width: 45%;
+    margin: 10px 2.5%;
+}
+}
+
+/* Móviles (≤ 767px): apilado */
+@media (max-width: 767px) {
+.pastel {
+    float: none;
+    width: 90%;
+    margin: 10px auto;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    font-size: 16px;
+}
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #6d4c41;
+}

@@ -1,0 +1,36 @@
+
+.galeria {
+    text-align: center; /* Centra las tarjetas en escritorio */
+}
+.tarjeta {
+display: inline-block;
+width: 90%;
+max-width: 220px;
+margin: 10px;
+padding: 10px;
+background: linear-gradient(to bottom, #f7d3e3, #fbeeea);
+border-radius: 16px;
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+text-align: center;
+border: 1px solid #e1cbd1;
+vertical-align: top; /* Para que se alineen bien cuando hay varias */ }
+
+.tarjeta h3 {
+margin: 12px 0 8px;
+color: #8c3a5c;
+font-family: 'Segoe UI', sans-serif;
+font-size: 18px; }
+
+.tarjeta img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+display: block;
+margin: 0 auto; }
+
+/* MEDIA QUERY PARA ESCRITORIO */
+@media (min-width: 768px) {
+.tarjeta {
+width: 220px; /* Tamaño fijo para que se alineen horizontalmente */
+    }
+}
